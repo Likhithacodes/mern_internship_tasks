@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-04 CSS</title>
+  </head>
+  <style>
+    .info {
+      text-align: center;
+    }
+    .box {
+      width: 50px;
+      height: 50px;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      overflow: hidden;
+      transition: 0.3s;
+      transition-delay: 0.1s;
+    }
+    .box span {
+      opacity: 0;
+      display: flex;
+      justify-content: center;
+      transition-delay: 0.2s;
+      transition: 0.5s;
+    }
+    .box:hover span {
+      opacity: 1;
+      font-size: 30px;
+      color: white;
+      text-align: center;
+    }
+    .box:hover {
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1 class="info">Hoverable Sidenav Buttons</h1>
+      <p class="info">
+        Hover over the buttons in the left side navigation to open them
+      </p>
+      <div class="box" id="b1" style="background-color: green">
+        <span>Green color</span>
+      </div>
+      <br />
+      <div class="box" id="b2" style="background-color: skyblue">
+        <span>Blue color</span>
+      </div>
+      <br />
+      <div class="box" id="b3" style="background-color: red">
+        <span>Red color</span>
+      </div>
+      <br />
+      <div class="box" id="b4" style="background-color: gray">
+        <span>Gray color</span>
+      </div>
+    </div>
+  </body>
+</html>

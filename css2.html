@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-02</title>
+  </head>
+  <style>
+    .all {
+      padding: 10px;
+      width: 200px;
+      height: 40px;
+      background-color: skyblue;
+      color: blue;
+      font-size: 20px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .all:hover {
+      background-color: rgb(228, 193, 103);
+      color: white;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      width: 500px;
+      background-color: lightgray;
+    }
+
+    .h {
+      display: inline-block;
+      width: 100px;
+      height: 50px;
+      border-right: 2px solid blue;
+      display: flex;
+      justify-content: center; /* Center content horizontally */
+      align-items: center; /* Center content vertically */
+      text-align: center;
+      color: blue;
+      transition: background-color 0.3s;
+      cursor: pointer;
+    }
+
+    .h:hover {
+      background-color: gray;
+      color: white;
+    }
+  </style>
+  <body>
+    <div>
+      <div class="all" id="home">Home</div>
+      <div class="all" id="java">Java</div>
+      <div class="all" id="css">CSS</div>
+      <div class="all" id="html">HTML</div>
+      <div class="all" id="bs">Bootstrap</div>
+    </div>
+    <br /><br /><br />
+    <div class="container">
+      <div class="h">Home</div>
+      <div class="h">Java</div>
+      <div class="h">CSS</div>
+      <div class="h">HTML</div>
+      <div class="h">Bootstrap</div>
+    </div>
+  </body>
+</html>

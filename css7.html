@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: absolute;
+    }
+    td{
+      color: white;
+      text-align: left;
+    }
+    .container{
+      background-color: #A22B55;
+      height: 75vh;
+      width: 75vw;
+      z-index: -1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+    }
+    .innerbox{
+      background-color: #75203F;
+      width: 370px;
+      text-align: center;
+      padding: 30px;
+      z-index: 999;
+      position: relative;
+      align-items: center;
+    }
+    button{
+      display: inline;
+      width: 100%;
+      height: 20px;
+      border-radius: 5px;
+      border: none;
+    }
+    .val{
+      color: grey;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="innerbox">
+      <table>
+        <tbody>
+            <tr>
+                <td width="140">Name:</td>
+                <td><input type="text" value="your name" class="val" size="25"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" value="your email" class="val" size="25"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" size="25"></td>
+            </tr>
+            <tr>
+                <td>Phone Number:</td>
+                <td><input type="tel" size="25"></td>
+            </tr>
+            <tr>
+              <td>
+                Gender:
+              </td>
+              <td>Male: <input type="radio">
+                  Female: <input type="radio">
+                  other: <input type="radio">
+              </td>
+            </tr>
+            <tr>
+                <td>Language</td>
+                <td><select name="" id="">
+                    <option value="">Select language</option>
+                    <option value="telugu">Telugu</option>
+                    <option value="english">English</option>
+                </select></td>
+            </tr>
+            <tr>
+              <td>Zip Code:</td>
+              <td><input type="text" size="25"></td>
+            </tr>
+            <tr>
+              <td>About:</td>
+              <td><textarea name="" id="" cols="25" rows="4" class="val" >Write about yourself....</textarea></td>
+            </tr>
+            <tr>
+              <td colspan="2"><button>Register</button></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+  </div>
+</body>
+</html>
